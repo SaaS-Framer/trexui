@@ -1,6 +1,4 @@
-# TrexUI Free NextJS SaaS template 🚀
-
-## Tailwind CSS Components
+# TrexUI Free NextJS SaaS template - Tailwind CSS Components 🚀
 
 Build website in minutes using our UI components, sections and pages with easy to use customization options.
 
