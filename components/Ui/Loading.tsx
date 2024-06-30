@@ -7,7 +7,7 @@ const Loading = () => {
       x="0px"
       y="0px"
       viewBox="0 0 50 50"
-      enable-background="new 0 0 0 0"
+      enableBackground="new 0 0 0 0"
       style={{
         width: "50px",
         height: "50px",
