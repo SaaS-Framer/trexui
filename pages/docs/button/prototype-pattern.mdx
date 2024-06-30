@@ -1,0 +1,55 @@
+
+# Factory Pattern
+
+Use a factory function in order to create objects
+
+---
+
+### Overview
+
+With the Factory Pattern, we can use a special function - the factory function - to create many of the same objects.
+
+
+
+---
+
+### Implementation
+
+A factory function can be any function that returns an object.
+
+```js
+const createUser = (firstName, lastName) => ({
+  id: crypto.randomUUID(),
+  createdAt: Date.now(),
+  firstName,
+  lastName,
+  fullName: `${firstName} ${lastName}`,
+});
+
+createUser("John", "Doe");
+createUser("Sarah", "Doe");
+createUser("Lydia", "Hallie");
+```
+
+```js
+console.log('hello, world')
+```
+
+---
+
+### Tradeoffs
+
+
+
+
+---
+
+### Exercise
+
+#### Challenge
+
+Refactor the following code to use a `createBook` factory function.
+
+
+#### Solution
+
