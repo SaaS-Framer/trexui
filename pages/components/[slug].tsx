@@ -113,6 +113,7 @@ export const getStaticProps = async (context: {
   const {
     params: { slug },
   } = context;
+ try {
   const res = await fetch(`${apikeys.apiUrl}components/${slug}`);
   const data = await res.json();
 
@@ -120,12 +121,17 @@ export const getStaticProps = async (context: {
     return {
       props: {
         component: data.data,
-        key: slug,
         relatedcomponents: data.relatedcomponents,
       },
       revalidate: 1000000, // 10 Day
     };
   } else {
+    return {
+      notFound: true,
+    };
+  }
+} catch (error) {
+    console.error('Error fetching component:', error);
     return {
       notFound: true,
     };
